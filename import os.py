@@ -7,7 +7,7 @@ for filename in os.listdir(folder_path):
     if filename.endswith(".jfif"):
         img_path = os.path.join(folder_path, filename)
         with Image.open(img_path) as img:
-            img = img.convert
+            img = img.convert("RGB")
 
             new_filename = os.path.splitext(filename)[0] + ".jpg"
             new_path = os.path.join(folder_path, new_filename)
@@ -16,5 +16,7 @@ for filename in os.listdir(folder_path):
 
         
         print(f"Successfully converted {filename} to {new_filename}")
-
+        
+        os.remove(img_path)
+        print(f"Deleted {filename}")
     
