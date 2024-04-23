@@ -1,7 +1,7 @@
 import os 
 from PIL import Image
 
-folder_path = "C:\Users\Daniel\Desktop\New folder (2)"
+folder_path = r"C:\Users\Daniel\Desktop\New folder (2)"
 
 for filename in os.listdir(folder_path):
     if filename.endswith(".jfif"):
@@ -19,4 +19,3 @@ for filename in os.listdir(folder_path):
         
         os.remove(img_path)
         print(f"Deleted {filename}")
-    
