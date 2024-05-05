@@ -19,3 +19,4 @@ for filename in os.listdir(folder_path):
         
         os.remove(img_path)
         print(f"Deleted {filename}")
+

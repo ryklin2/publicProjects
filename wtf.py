@@ -1,1 +1,1 @@
-jupyter
+import numpy
