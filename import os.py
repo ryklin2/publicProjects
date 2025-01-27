@@ -8,7 +8,7 @@ for filename in os.listdir(folder_path):
         img_path = os.path.join(folder_path, filename)
         with Image.open(img_path) as img:
             img = img.convert("RGB")
-
+ 
             new_filename = os.path.splitext(filename)[0] + ".jpg"
             new_path = os.path.join(folder_path, new_filename)
             
